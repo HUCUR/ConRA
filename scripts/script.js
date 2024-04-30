@@ -122,8 +122,8 @@ function startAssessment() {
 
 function addVideo(title, url, responseSequence){
     let titleArray = getCookie("video_title") || [];
-    if (titleArray.length >= 5) {
-        alert("You can't add more than 5 videos.");
+    if (titleArray.length >= 20) {
+        alert("You can't add more than 20 videos.");
         return;
     }
     let urlArray = getCookie("video_url") || [];
